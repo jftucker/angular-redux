@@ -1,0 +1,3 @@
+<p>Last Update: {{ lastUpdate | async | date: "mediumTime" }}</p>
+<p>Total items: {{ (todos | async).length }}</p>
+<button (click)="clearAll()">Clear All</button>
